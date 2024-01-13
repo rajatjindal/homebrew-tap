@@ -23,11 +23,6 @@ class ModifySecret < Formula
     sha256 "7f26953a6d8e74613e25da9e2d9d6f070ef3e0ad7ec45e6c5c3acc04ceb1d67f"
   end
 
-	if OS.win? && Hardware::CPU.intel?
-		url "https://github.com/rajatjindal/kubectl-modify-secret/releases/download/v#{version}/kubectl-modify-secret_v#{version}_windows_amd64.tar.gz"
-    sha256 "74f84fe69acf7e52642359983c962b9c2a6aec311270359554ebde67001dfda1"
-  end
-
   def install
     bin.install "modify-secret"
   end
