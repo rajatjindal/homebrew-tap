@@ -1,4 +1,4 @@
-class KubectlModifySecret < Formula
+class ModifySecret < Formula
   desc "a kubectl plugin, that allows user to modify the secret without having to worry about doing base64 encoding/decoding"
   homepage "https://github.com/rajatjindal/kubectl-modify-secret"
   version "0.0.45"
