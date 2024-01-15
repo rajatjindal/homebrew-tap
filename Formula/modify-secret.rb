@@ -24,13 +24,13 @@ class ModifySecret < Formula
   end
 
   def install
-    bin.install "kubectl-modify-secret"
+    bin.install "kubectl-modify_secret"
   end
 
   def post_install
   end
 
   test do
-    assert shell_output("#{bin}/kubectl-modify-secret --version")
+    assert shell_output("#{bin}/kubectl-modify_secret --version")
   end
 end
